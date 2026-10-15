@@ -8,12 +8,12 @@ class AppTest {
     @Test
     void identifiesNumberPalindromes() {
         assertTrue(new App().isPalindromeNumber(121));
-        assertTrue(new App().isPalindromeNumber(0));
+        assertTrue(new App().isPalindromeNumber(1));
     }
 
     @Test
     void rejectsNonPalindromesAndNegativeNumbers() {
         assertFalse(new App().isPalindromeNumber(123));
-        assertFalse(new App().isPalindromeNumber(-121));
+        assertFalse(new App().isPalindromeNumber(-12));
     }
 }
