@@ -16,4 +16,8 @@ class AppTest {
         assertFalse(new App().isPalindromeNumber(123));
         assertFalse(new App().isPalindromeNumber(-121));
     }
+    @Test
+    void failureTestCase() {
+        assertTrue(new App().isPalindromeNumber(123));
+    }
 }
